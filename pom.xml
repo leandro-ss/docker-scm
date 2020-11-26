@@ -22,9 +22,9 @@
     </repositories>
 
     <scm>
-        <connection>scm:git:git@github-person:bluesoft/erp-reports.git</connection>
-        <developerConnection>scm:git:git@github.com:bluesoft/erp-reports.git</developerConnection>
-        <url>scm:git:git@github.com:bluesoft/erp-reports.git</url>
+        <connection>scm:git:git@github-person:leandro-ss/docker-scm.git</connection>
+        <developerConnection>scm:git:git@github-person:leandro-ss/docker-scm.git</developerConnection>
+        <url>scm:git:git@github-person:leandro-ss/docker-scm.git</url>
         <tag>teste-scm-1.0</tag>
     </scm>
 
