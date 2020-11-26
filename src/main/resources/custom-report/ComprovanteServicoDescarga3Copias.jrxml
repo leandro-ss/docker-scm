@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 5.5.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ComprovanteServicoDescarga3Copias" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4540b1ff-7182-491e-9382-7947208b3667">
+	<parameter name="SUBREPORT" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="logo_principal" class="java.net.URL"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<group name="Relatorio3">
+		<groupHeader>
+			<band height="240" splitType="Prevent">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<subreport>
+					<reportElement x="-20" y="0" width="595" height="240" uuid="8ce29f24-a0f8-4b12-8f30-f4fa9ad9612e"/>
+					<subreportParameter name="logo_principal">
+						<subreportParameterExpression><![CDATA[$P{logo_principal}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRBeanCollectionDataSource)$P{REPORT_DATA_SOURCE}).cloneDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT}]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Relatorio2">
+		<groupHeader>
+			<band height="240" splitType="Prevent">
+				<subreport>
+					<reportElement x="-20" y="0" width="595" height="240" uuid="af3aca57-d24d-4db8-b9d2-7fe3e80570be"/>
+					<subreportParameter name="logo_principal">
+						<subreportParameterExpression><![CDATA[$P{logo_principal}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRBeanCollectionDataSource)$P{REPORT_DATA_SOURCE}).cloneDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT}]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Relatorio1">
+		<groupHeader>
+			<band height="240" splitType="Prevent">
+				<property name="com.jaspersoft.studio.layout"/>
+				<subreport>
+					<reportElement x="-20" y="0" width="595" height="240" uuid="5847d1b8-66ed-4154-8ee5-68e2d599db9e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<subreportParameter name="logo_principal">
+						<subreportParameterExpression><![CDATA[$P{logo_principal}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRBeanCollectionDataSource)$P{REPORT_DATA_SOURCE}).cloneDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT}]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</jasperReport>

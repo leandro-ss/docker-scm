@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<blockquote>
+    <h4>Esta página é apenas uma versão simplificada para o standalone do ERP-Reports.</h4>
+    <div>Para acessar a página completa, o projeto deve subir junto do ERP.</div>
+</blockquote>
+
+<hr/>
+
+<div>
+    <form onsubmit="enviar()">
+        <label>Produto Key</label>
+        <input id="produtoKey" type="text"/>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<script>
+    function enviar() {
+        event.preventDefault();
+
+        var produtoKey = document.getElementById('produtoKey').value,
+            produto = {
+                produtoKey: produtoKey,
+                descricao: 'Produto Fake: ' + produtoKey
+            };
+
+        window.opener.selectEntity(getParameterByName('idComponent'), produto);
+        window.close();
+    }
+
+    function getParameterByName(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+</script>
+</body>
+</html>
