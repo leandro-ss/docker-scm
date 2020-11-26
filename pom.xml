@@ -4,7 +4,7 @@
     <groupId>br.com.test</groupId>
     <artifactId>teste-scm</artifactId>
     <packaging>jar</packaging>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <description />
 
     <repositories>
@@ -25,7 +25,7 @@
         <connection>scm:git:git@github-person:leandro-ss/docker-scm.git</connection>
         <developerConnection>scm:git:git@github-person:leandro-ss/docker-scm.git</developerConnection>
         <url>scm:git:git@github-person:leandro-ss/docker-scm.git</url>
-        <tag>teste-scm-1.1</tag>
+        <tag>teste-scm-1.0</tag>
     </scm>
 
     <distributionManagement>
