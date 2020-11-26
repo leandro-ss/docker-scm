@@ -9,9 +9,8 @@
 
     <repositories>
         <repository>
-            <id>nexus</id>
+            <id>nexus-local</id>
             <url>https://localhost:8081/content/groups/public</url>
-            <layout>default</layout>
             <releases>
                 <updatePolicy>always</updatePolicy>
             </releases>
@@ -30,14 +29,14 @@
 
     <distributionManagement>
         <repository>
-            <id>nexus.releases</id>
+            <id>nexus-local.releases</id>
             <name>Internal Release Repository</name>
-            <url>http://localhost:8081/content/repositories/releases/</url>
+            <url>http://localhost:8081/repository/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus.snapshots</id>
+            <id>nexus-local.snapshots</id>
             <name>Internal Release Repository</name>
-            <url>http://localhost:8081/content/repositories/snapshots/</url>
+            <url>http://localhost:8081/repository/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
