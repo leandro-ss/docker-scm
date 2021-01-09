@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.test</groupId>
-    <artifactId>teste-scm</artifactId>
+    <artifactId>docker-scm</artifactId>
     <packaging>jar</packaging>
     <version>1.4-SNAPSHOT</version>
     <description />
@@ -17,14 +17,14 @@
             <snapshots>
                 <updatePolicy>always</updatePolicy>
             </snapshots>
-        </repository>
+        </repository>feature/233382-ajuste-para-duplicata-nome-participante
     </repositories>
 
     <scm>
         <connection>scm:git:git@github-person:leandro-ss/docker-scm.git</connection>
         <developerConnection>scm:git:git@github-person:leandro-ss/docker-scm.git</developerConnection>
         <url>scm:git:git@github-person:leandro-ss/docker-scm.git</url>
-        <tag>teste-scm-1.0</tag>
+        <tag>docker-scm-1.0</tag>
     </scm>
 
     <distributionManagement>
@@ -95,20 +95,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>it</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
     <properties>
         <java.version>11</java.version>
